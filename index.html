@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Koloina Rajoelison, social media manager et cheffe de projet."
+    />
+    <title>Koloina Rajoelison</title>
+    <script>
+      document.documentElement.classList.add("intro-enabled");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Sour+Gummy:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="intro-pending">
+    <header class="site-header" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Koloina Rajoelison">
+        <img src="images/kr_logo.svg" alt="KR" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#projets">Projets</a>
+      </nav>
+
+      <a class="contact-button" href="tel:+261000000000">
+        <span>Me contacter</span>
+        <img src="images/Phone.svg" alt="" aria-hidden="true" />
+      </a>
+    </header>
+
+    <main id="accueil" class="hero" aria-labelledby="hero-title">
+      <section class="hero-stage">
+        <div class="hero-panel" aria-hidden="true"></div>
+
+        <img
+          class="scribble scribble-rays"
+          src="images/scribble1.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="scribble scribble-star"
+          src="images/scribble2.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <h1 id="hero-title" class="hero-title hero-title-left">
+          <span>Social Media</span>
+          <span>Manager</span>
+        </h1>
+
+        <h2 class="hero-title hero-title-right">
+          <span>&amp; Cheffe</span>
+          <span>de Projet.</span>
+        </h2>
+
+        <p class="name-pill">Je suis Koloina 🌿</p>
+
+        <img
+          class="hero-person"
+          src="images/koloina_rajoelison_hero.png"
+          alt="Portrait de Koloina Rajoelison"
+        />
+      </section>
+
+      <section id="apropos" class="hero-bottom" aria-label="Présentation">
+        <p class="intro-copy">
+          Passionnée par la communication digitale, le marketing et la création
+          de contenu, j'accompagne les organisations dans le développement de
+          leur visibilité grâce à des stratégies de communication créatives, des
+          contenus engageants et une approche orientée résultats.
+        </p>
+
+        <div class="hero-actions" id="projets">
+          <a class="action-button action-outline" href="#projets">
+            <span>Voir mes projets</span>
+            <img src="images/ReadCvLogo.svg" alt="" aria-hidden="true" />
+          </a>
+          <a class="action-button action-solid" href="#" download>
+            <span>Télécharger mon CV</span>
+            <img src="images/FileArrowDown.svg" alt="" aria-hidden="true" />
+          </a>
+        </div>
+      </section>
+
+      <span id="services" class="anchor-target" aria-hidden="true"></span>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
