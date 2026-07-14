@@ -61,7 +61,16 @@
       }
     </script>
   </head>
-  <body>
+  <body class="is-loading">
+    <div class="page-loader" aria-hidden="true">
+      <div class="loader-card">
+        <img src="images/kr_logo.svg" alt="" />
+        <div class="loader-track">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
     <header class="site-header" aria-label="Navigation principale">
       <a class="brand" href="#accueil" aria-label="Koloina Rajoelison">
         <img src="images/kr_logo.svg" alt="Logo KR de Koloina Rajoelison" />
@@ -71,13 +80,13 @@
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
         <a href="#services">Services</a>
-        <a href="#projets">Projets</a>
+        <a href="#experience">Parcours</a>
       </nav>
 
       <a
         class="contact-button"
-        href="tel:+261000000000"
-        aria-label="Contacter Koloina Rajoelison par téléphone"
+        href="#contact"
+        aria-label="Aller aux informations de contact de Koloina Rajoelison"
       >
         <span>Me contacter</span>
         <img src="images/Phone.svg" alt="" aria-hidden="true" />
@@ -141,11 +150,19 @@
           </p>
 
           <div class="hero-actions" id="projets">
-            <a class="action-button action-outline" href="#projets">
-              <span>Voir mes projets</span>
+            <a
+              class="action-button action-outline action-disabled"
+              aria-disabled="true"
+              tabindex="-1"
+            >
+              <span>Projets bientôt disponibles</span>
               <img src="images/ReadCvLogo.svg" alt="" aria-hidden="true" />
             </a>
-            <a class="action-button action-solid" href="#" download>
+            <a
+              class="action-button action-solid"
+              href="CV - Koloina Rajoelison - 2026.pdf"
+              download="CV - Koloina Rajoelison - 2026.pdf"
+            >
               <span>Télécharger mon CV</span>
               <img src="images/FileArrowDown.svg" alt="" aria-hidden="true" />
             </a>
@@ -453,7 +470,7 @@
       </section>
     </main>
 
-    <footer class="site-footer" aria-labelledby="footer-title">
+    <footer id="contact" class="site-footer" aria-labelledby="footer-title">
       <div class="footer-main">
         <div class="footer-brand">
           <img
